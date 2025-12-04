@@ -2,7 +2,7 @@
   --primary-color: #eeeeee;
   --button-color: #bb8fa9;
   --secondary-color: #d8cbbb;
-  --fourty-color: #560764;
+  --fourth-color: #560764;
   --h1-font: "WindSong", cursive;
   --h2-font: "Gruppo", cursive;
 }
@@ -67,6 +67,17 @@ p {
 
 .app-screenshot img {
   border-radius: 8px;
+}
+
+footer {
+  font-family: var(--h2-font);
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer-link {
+  color: var(--fourth-color);
+  text-decoration: none;
 }
 
 @media (max-width: 960px) {
