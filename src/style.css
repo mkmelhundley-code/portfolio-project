@@ -15,6 +15,9 @@ h1 {
 h2 {
   font-family: var(--h2-font);
   font-size: 48px;
+}
+
+p {
   line-height: 2;
 }
 
@@ -39,8 +42,60 @@ h2 {
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
   font-size: 18px;
   cursor: pointer;
+}
+
+.btn-branding-outline {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+}
+
+.project-description {
+  padding: 60px 60px;
+}
+
+.app-screenshot {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.app-screenshot img {
+  border-radius: 8px;
+}
+
+@media (max-width: 960px) {
+  .project-descrioption {
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 54px;
+    line-height: 1.5;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .hero p {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .container h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
 }
