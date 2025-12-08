@@ -7,18 +7,14 @@
   --h2-font: "Gruppo", cursive;
 }
 
-h1 {
-  font-family: var(--h1-font);
-  font-size: 96px;
-}
-
-h2 {
-  font-family: var(--h2-font);
-  font-size: 48px;
-}
-
 p {
   line-height: 2;
+}
+
+footer {
+  font-family: var(--h2-font);
+  text-align: center;
+  font-size: 18px;
 }
 
 .hero {
@@ -27,12 +23,19 @@ p {
   padding: 160px 20px;
 }
 
+.hero h1 {
+  font-family: var(--h1-font);
+  font-size: 96px;
+  margin: 0;
+}
+
 .hero p {
   font-size: 36px;
   margin: 0;
 }
 
 .hero h2 {
+  font-family: var(--h2-font);
   font-size: 36px;
 }
 
@@ -74,19 +77,41 @@ p {
   border-radius: 8px;
 }
 
-footer {
-  font-family: var(--h2-font);
-  text-align: center;
-  font-size: 18px;
-}
-
 .footer-link {
   color: var(--fourth-color);
   text-decoration: none;
 }
 
+.about-hero {
+  padding: 160px 20px;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
+.headshot {
+  border-radius: 8px;
+  max-height: 500px;
+}
+
+.about-hero h3 {
+  font-family: var(--h2-font);
+  font-size: 40px;
+}
+
+.about-hero h1 {
+  font-family: var(--h1-font);
+  font-size: 60px;
+}
+
+.about-hero h2 {
+  font-family: var(--h2-font);
+  font-size: 18px;
+}
+
 @media (max-width: 960px) {
-  .project-descrioption {
+  .project-description {
     padding: 0;
     text-align: center;
   }
@@ -113,5 +138,19 @@ footer {
   .container h2 {
     font-size: 24px;
     line-height: 1.5;
+  }
+
+  .about-hero {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .about-hero h3 {
+    font-size: 28px;
   }
 }
