@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calligraphy</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(253, 239, 132) 0%,
+          rgb(247, 198, 169) 54.2%,
+          rgb(21, 186, 196) 100.3%
+        );
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        display: block;
+        background-color: white;
+        border: 1px solid #2ebbc1;
+        border-radius: 6px;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 10px 20px;
+      }
+      button:hover {
+        background-color: #2ebbc1;
+        cursor: pointer;
+      }
+      h1 {
+        margin: 20px auto;
+        text-align: center;
+        font-family: Zapfino, Arial, Helvetica, sans-serif;
+        font-size: 40px;
+      }
+      h2 {
+        margin: 20px auto;
+        text-align: center;
+        font-family: Noteworthy, Arial, Helvetica, sans-serif;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      img {
+        max-width: 100%;
+      }
+      footer {
+        text-align: center;
+        font-size: 20px;
+        font-family: Noteworthy, Arial, Helvetica, sans-serif;
+        margin: 10px 0;
+      }
+      .container {
+        background: white;
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .theme-button {
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        padding: 10px;
+        border: none;
+      }
+      .theme-button:hover {
+        background-color: white;
+        color: black;
+      }
+      .calligraphy-tools-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .calligraphy-tools-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.2);
+      }
+      .example-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 15px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .grid img:hover {
+        transform: scale(3);
+      }
+      .dark {
+        background: linear-gradient(
+          110.6deg,
+          rgb(156, 116, 129) -18.3%,
+          rgb(67, 54, 74) 16.4%,
+          rgb(47, 48, 67) 68.2%,
+          rgb(27, 23, 36) 99.1%
+        );
+        color: white;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: #2ebbc1;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Calligraphy ✒️</h1>
+      <h2>My Creative Hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Calligraphy" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/192/original/Calligraphy_Tools_of_the_Trade.png?1758915945"
+          alt="Calligraphy Tools"
+          class="calligraphy-tools-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/185/original/Yahweh.png?1758903399"
+          alt="Calligraphy Artwork"
+          class="example-picture"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/189/original/Wander.png?1758915678"
+          alt="Calligraphy Artwork"
+          class="example-picture"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/190/original/Still.png?1758915725"
+          alt="Calligraphy Artwork"
+          class="example-picture"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/191/original/Watercolor_Flowers.png?1758915791"
+          alt="Watercolor brushes on background"
+          class="example-picture"
+        />
+      </div>
+      <p>
+        Calligraphy is a visual art related to writing. It involves the design
+        and execution of lettering with a pen, ink brush, or other writing
+        instruments. Contemporary calligraphic practice is often defined as "the
+        art of giving form to signs in an expressive, harmonious, and skillful
+        manner."
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Calligraphy" target="_blank"
+          >📖 Read on Wikipedia</a
+        >
+      </p>
+
+      <button class="learn-calligraphy">Learn Calligraphy ✒️</button>
+    </div>
+    <footer>
+      Coded with creativity 🫟 by
+      <a
+        href="https://www.shecodes.io/graduates/178483-melissa-hundley"
+        target="_blank"
+        >Melissa Hundley</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      function calligraphyLessons() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is your email address?");
+        let city = prompt("What city, state do you live in?");
+        city = city.toLowerCase();
+        city = city.trim();
+        if (city === "portland, or") {
+          alert("Thank you " + name + "! I will email you soon! ✒️");
+        } else {
+          alert(
+            "Sorry " +
+              name +
+              ". I do not currently offer lessons in your area, but you can search for local calligraphy guilds in your area! 🥺"
+          );
+        }
+      }
+      let lessonsButton = document.querySelector(".learn-calligraphy");
+      lessonsButton.addEventListener("click", calligraphyLessons);
+    </script>
+  </body>
+</html>
